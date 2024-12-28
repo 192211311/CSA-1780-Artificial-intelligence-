@@ -1,0 +1,12 @@
+from sklearn import tree
+
+# Dataset
+features = [[0, 0], [1, 1], [1, 0], [0, 1]]
+labels = [0, 1, 1, 0]  # XOR logic
+
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(features, labels)
+
+test_data = [[1, 1], [0, 0]]
+predictions = clf.predict(test_data)
+print("Predictions:", predictions)
