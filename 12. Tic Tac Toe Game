@@ -1,0 +1,13 @@
+game = TicTacToe()
+game.display_board()
+
+game.make_move(0, 'X')
+game.make_move(4, 'O')
+game.make_move(8, 'X')
+
+game.display_board()
+winner = game.check_winner()
+if winner:
+    print(f"Winner: {winner}")
+else:
+    print("No winner yet.")
